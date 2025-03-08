@@ -1,0 +1,86 @@
+/* Reset body to avoid centering everything */
+body {
+    margin: 0;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar remains at the top */
+nav {
+    width: 100%;
+}
+
+.title {
+    text-align: center;
+    margin-top: 38px;
+}
+
+/* Center only the user form */
+.form-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 80px); /* Full height minus navbar */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#userForm {
+    text-align: center;
+    width: 100%; /* Responsive width */
+    max-width: 700px; /* Wider form for the boxes */
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#userForm label {
+    display: block;
+    margin: 15px 0 5px;
+}
+
+#userForm input {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition-duration: 0.4s;
+}
+
+/* Make inputs grow dynamically */
+#userForm input:focus {
+    outline: none;
+    border-color: #007bff;
+    transition: width 0.2s ease;
+}
+
+/* Style for each question box */
+.question-box {
+    background-color: #ffffff; /* White background */
+    margin-bottom: 20px; /* Space between boxes */
+    padding: 20px; /* Space inside the box */
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+button {
+    background-color: #446c9c;
+    border-radius: 10px;
+    padding: 12px 28px;
+    border: 0;
+    color: #f4f4f4;
+    transition-duration: 0.4s;
+}
+
+button:hover {
+background-color: #d18400;
+color: #f4f4f4;
+}
+
